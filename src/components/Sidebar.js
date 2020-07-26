@@ -7,6 +7,7 @@ import JSXRules from './concepts/JSXRules';
 import CreateElement from './concepts/CreateElement';
 import State from './concepts/State';
 import Effects from './concepts/Effects';
+import PropsDemo from './concepts/PropsDemo';
 
 const Sidebar = () => {
     return (
@@ -20,6 +21,7 @@ const Sidebar = () => {
             <li><Link to="/actualjs">Actual JS</Link></li>
             <li><Link to="/usestate">Use State</Link></li>
             <li><Link to="/effects">Effects</Link></li>
+            <li><Link to="/props">Props</Link></li>
         </ul>
         </div>
         <div className="sidebar-route">
@@ -32,6 +34,7 @@ const Sidebar = () => {
                 <Route exact path="/actualjs"><CreateElement/></Route>
                 <Route exact path="/usestate"><State/></Route>
                 <Route exact path="/effects"><Effects/></Route>
+                <Route exact path="/props"><PropsDemo/></Route>
             </Switch>
         </div>
     </div>
